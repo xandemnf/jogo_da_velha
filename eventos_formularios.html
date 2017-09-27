@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Divs</title>
+
+		<!-- bootstrap - link cdn -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+		
+		<!-- jquery -->
+		<!---<script src="js/jquery-3.2.1.js"></script>--> 
+<script type="text/javascript">
+
+$(document).ready(function(){
+   $('#elemento1').focus(function(){
+      alert("Elemento foi focado");
+   });
+   $("#elemento2").blur(function(){
+      alert("Elemento perdeu o foco");
+   });
+   $('#elemento3').change(function(){
+      alert("O Elemento foi modificado")
+   });
+
+
+});
+
+</script>
+
+		
+	</head>
+
+<body>
+
+<input type="text" id="elemento1" /><br />
+
+<input type="text" id="elemento2" /><br />
+
+<select id="elemento3" >
+	<option value="1">1</option>
+	<option value="2">2</option>
+	<option value="3">3</option>
+	<option value="4">4</option>
+</select><br />
+	
+	
+	
+
+</body>
+</html>
