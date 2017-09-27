@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Divs</title>
+
+		<!-- bootstrap - link cdn -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+		
+		<!-- jquery -->
+		<!---<script src="js/jquery-3.2.1.js"></script>--> 
+<script type="text/javascript">
+$(document).ready(function(){
+   $('#campo1').keydown(function(){
+   	   alert("Elemento foi digitado!")
+   });
+   $('#campo2').keypress(function(){
+       alert("Elemento foi digitado !especial");
+   });
+   $('#campo3').keyup(function(){
+      alert("Soltou a tecla");
+   });
+
+});
+
+</script>
+
+		
+	</head>
+
+<body>
+	
+	<input id="campo1" type="text" placeholder="Digite aqui" /> <br />
+
+	<input id="campo2" type="text" placeholder="Digite aqui" /> <br />
+
+	<input id="campo3" type="text" placeholder="Digite aqui" /> <br />
+	
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Divs</title>
+
+		<!-- bootstrap - link cdn -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+		
+		<!-- jquery -->
+		<!---<script src="js/jquery-3.2.1.js"></script>--> 
+<script type="text/javascript">
+$(document).ready(function(){
+   $('#'+'div1').click(function(){
+   	   alert("Elemento foi Clicado!")
+   });
+});
+
+$(document).ready(function(){
+	$('#div2').dblclick(function(){
+		alert("Duplo cique efetuado!");
+	});
+});
+
+$(document).ready(function(){
+	$('#div3').mousedown(function(){
+		alert("Mouse precionado aqui!");
+	});
+});
+
+$(document).ready(function(){
+	$('#div4').mouseover(function(){
+		alert("Elemento sobreposto pelo mouse");
+	});
+});
+
+$(document).ready(function(){
+	$('#div5').mouseout(function(){
+		alert("o Mouse saiu do teclado");
+	});
+});
+
+</script>
+
+		
+	</head>
+
+<body>
+	
+	<div id="div1" style="height: 150px;width:150px;background: #CCC">1 Click</div>
+	<div id="div2" style="height: 150px;width:150px;background: #CCA;display: run-in;margin-top: 10px;">2 Clicks</div>
+	<div id="div3" style="height: 150px;width:150px;background: #ACA;display: run-in; margin-top: 10px;">MouseDown</div>
+	<div id="div4" style="height: 150px;width:150px;background: #AAA;display: run-in; margin-top: 10px;">MouseOver</div>
+	<div id="div5" style="height: 150px;width:150px;background: #BBB;display: run-in; margin-top: 10px;">MouseOut</div>
+
+
+
+</body>
+</html>
